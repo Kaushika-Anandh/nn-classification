@@ -126,12 +126,11 @@ categories_lst=[['Male', 'Female'],
             ['Low', 'High', 'Average']]
 enc = OrdinalEncoder(categories=categories_lst)
 df1=df_cleaned.copy()
-df1[['Gender','Ever_Married','Graduated','Profession','Spending_Score']] = enc.fit_transform
-                                                                               (df1[['Gender',
-                                                                               'Ever_Married',
-                                                                               'Graduated',
-                                                                               'Profession',
-                                                                               'Spending_Score']])
+df1[['Gender','Ever_Married',
+     'Graduated','Profession',
+     'Spending_Score']] = enc.fit_transform(df1[['Gender','Ever_Married',
+                                                 'Graduated','Profession',
+                                                 'Spending_Score']])
 df1.dtypes
 
 le = LabelEncoder()
@@ -140,13 +139,8 @@ df1.dtypes
 
 df1.describe()
 df1['Segmentation'].unique()
-X = df1[['Gender',
-         'Ever_Married',
-         'Age',
-         'Graduated',
-         'Profession',
-         'Work_Experience',
-         'Spending_Score',
+X = df1[['Gender','Ever_Married','Age','Graduated',
+         'Profession','Work_Experience','Spending_Score',
          'Family_Size']].values
 
 y1=df1[['Segmentation']].values
