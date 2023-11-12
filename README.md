@@ -233,6 +233,8 @@ print(le.inverse_transform(x_single_prediction))
 
 <img src="https://github.com/Kaushika-Anandh/nn-classification/blob/main/1.PNG" width="450" height="200">
 
+<br>
+
 ## OUTPUT
 
 ### Training Loss, Validation Loss Vs Iteration Plot
