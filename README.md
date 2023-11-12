@@ -231,7 +231,7 @@ print(le.inverse_transform(x_single_prediction))
 
 ## Dataset Information
 
-<img src="https://github.com/Kaushika-Anandh/nn-classification/blob/main/1.PNG" width="550" height="300">
+<img src="https://github.com/Kaushika-Anandh/nn-classification/blob/main/1.PNG" width="450" height="200">
 
 ## OUTPUT
 
